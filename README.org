@@ -1,35 +1,27 @@
 #+TITLE: distributed-task-scheduler
-#+STARTUP: overview
+#+AUTHOR: aygp-dr
 
-* Overview
+Interactive task queue viewer with job control. Terminal UI built with [[https://github.com/charmbracelet/bubbletea][Bubble Tea]].
 
-Interactive task queue viewer with job control. Terminal UI built with [Bubble Tea](https://github.com/charmbracelet/bubbletea).
-
-* Quick Start
+** Run
 
 #+begin_src bash
 go run .
-# or
-make build && ./bin/distributed-task-scheduler
 #+end_src
 
-* Controls
+** Build
 
-| Key | Action |
-|-----+--------|
-| j/k | Navigate |
-| Enter | Select/details |
-| q | Quit |
+#+begin_src bash
+make build
+./bin/distributed-task-scheduler
+#+end_src
 
-* Development
+** Controls
 
-| Target | Description |
-|--------+-------------|
-| make build | Build binary |
-| make run | Build and run |
-| make test | Run tests |
-| make lint | Run go vet |
+- =j/k=: navigate
+- =Enter=: select/details
+- =q=: quit
 
-* Status
+** Status
 
-Scaffold — see CLAUDE.md for implementation plan.
+Scaffold -- see CLAUDE.md for implementation plan.
